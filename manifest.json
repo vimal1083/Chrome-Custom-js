@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "cjs",
+    "description": "Injects js files into webpages, can be used to remove google ads, automatically skip the youtube ads..",
+    "version": "1",
+    "author": "Vimal",
+    "browser_action": {
+        "default_title": "Custom js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*/*",
+                "http://*/*"
+            ],
+            "js": [
+                "jquery.min.js",
+                "background.js"
+            ]
+        }
+    ],
+    "permissions": ["activeTab"]
+}
