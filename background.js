@@ -16,6 +16,10 @@ setInterval(() => {
     
         // Remove legacy Ad near youtube videos
         $(".ytd-companion-slot-renderer") && $(".ytd-companion-slot-renderer").remove();
+
+
+        $(".ytp-ad-preview-text") && $(".ytp-ad-preview-text").length &&  window.location.reload()
+
     }
 
     // Remove the google Ads from all websites, mostly won't work
