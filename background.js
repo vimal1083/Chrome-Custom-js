@@ -8,7 +8,8 @@ setInterval(() => {
 
         // Remove youtube hero Ad banner
         $("ytd-video-masthead-ad-renderer") && $("ytd-video-masthead-ad-renderer").remove();
-    
+        $("#masthead-ad") && $("#masthead-ad").remove()
+
         // Skip advertisement
         $(".videoAdUiSkipButton") && $(".videoAdUiSkipButton").click();
         $(".ytp-ad-skip-button") && $(".ytp-ad-skip-button").click();
