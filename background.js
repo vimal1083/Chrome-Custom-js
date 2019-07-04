@@ -19,7 +19,7 @@ setInterval(() => {
         $(".ytd-companion-slot-renderer") && $(".ytd-companion-slot-renderer").remove();
 
 
-        $(".ytp-ad-preview-text") && $(".ytp-ad-preview-text").length &&  window.location.reload()
+        // $(".ytp-ad-preview-text") && $(".ytp-ad-preview-text").length &&  window.location.reload()
 
     }
 
