@@ -29,4 +29,12 @@ setInterval(() => {
     // Remove gmail Ad banners
     $(".aKB") && $(".aKB").remove()
     
+    // Remove Quora Ad banners
+    $('.home_feed_ad').css("display", "none")
+   
+    // Remove "Questions for you", "Discover People", "Discover topics" section in quora
+    $('.QuestionStoryBundle').remove()
+    $('.SuggestedTribesBundle').remove()
+    $('.SuggestedUsersBundle').remove()
+    $('.SuggestedTopicsBundle').remove()
 }, 500);
