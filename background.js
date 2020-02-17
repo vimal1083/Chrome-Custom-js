@@ -37,4 +37,8 @@ setInterval(() => {
     $('.SuggestedTribesBundle').remove()
     $('.SuggestedUsersBundle').remove()
     $('.SuggestedTopicsBundle').remove()
+
+   // Remove facebook sponsored Ads
+   $("a:contains('Sponsored')").closest("div[id^='hyperfeed_story_id']").remove()
+
 }, 500);
