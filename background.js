@@ -32,6 +32,10 @@ setInterval(() => {
     // Remove Quora Ad banners
     $('.home_feed_ad').css("display", "none")
    
+    // Remove quora sponsored content
+    $("div[color='gray_light']:contains('Sponsored by')").parent().parent().parent().hide()
+    $("div[color='gray_light']:contains('Promoted by')").parent().parent().parent().hide()
+
     // Remove "Questions for you", "Discover People", "Discover topics" section in quora
     $('.QuestionStoryBundle').remove()
     $('.SuggestedTribesBundle').remove()
