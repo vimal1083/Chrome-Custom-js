@@ -44,5 +44,8 @@ setInterval(() => {
 
    // Remove facebook sponsored Ads
    $("a:contains('Sponsored')").closest("div[id^='hyperfeed_story_id']").remove()
+   
+   // Remove twitter promoted contents
+   $('span:contains("Promoted")').parent().parent().parent().parent().parent().parent().remove()
 
 }, 500);
